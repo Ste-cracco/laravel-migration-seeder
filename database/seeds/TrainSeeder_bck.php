@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Train ;
 
 class TrainSeeder extends Seeder
 {
@@ -13,14 +12,13 @@ class TrainSeeder extends Seeder
     public function run()
     {
         //
-        $trains = [
+        $trains [
             [
                 'azienda' => 'Pinco',
                 'stazione_partenza' => 'Milano',
                 'stazione_arrivo' => 'Bologna',
                 'orario_partenza' => '09:00',
                 'orario_arrivo' => '11:30',
-                'codice_treno' => 'wdwd66d',
                 'numero_carrozze' => 2,
                 'in_orario' => rand(0,1),
                 'cancellato' => rand(0,1)
@@ -34,7 +32,6 @@ class TrainSeeder extends Seeder
             $newTrain->stazione_arrivo = $train['stazione_arrivo'];
             $newTrain->orario_partenza = $train['orario_partenza'];
             $newTrain->orario_arrivo = $train['orario_arrivo'];
-            $newTrain->codice_treno = $train['codice_treno'];
             $newTrain->numero_carrozze = $train['numero_carrozze'];
             $newTrain->in_orario = $train['in_orario'];
             $newTrain->cancellato = $train['cancellato'];
